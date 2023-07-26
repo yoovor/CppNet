@@ -11,7 +11,7 @@ void ConnectFunc(Handle handle, uint32_t err) {
 	if (err == CEC_SUCCESS) {
 		std::string msg("it is a test message.");
 		std::string str = msg;
-		str.reserve(msg.size() * 1000);
+		str.reserve(msg.size() * 100);
 		for (int i = 0; i < 100; i++)
 			str += msg;
 
